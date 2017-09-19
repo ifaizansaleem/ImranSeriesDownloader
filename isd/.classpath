@@ -32,5 +32,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/Software/jaunt1.3.3/jaunt1.3.3.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
