@@ -119,7 +119,7 @@ public class ImranSeriesDownloader {
 					} catch (JauntException e1) { // if an HTTP/connection error occurs, handle JauntException.
 						System.err.println(e1);
 					}
-				}
+				} 
 
 				/*
 				if (counter++ == 5)
