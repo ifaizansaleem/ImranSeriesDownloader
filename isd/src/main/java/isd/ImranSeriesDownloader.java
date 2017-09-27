@@ -224,9 +224,6 @@ public class ImranSeriesDownloader {
 			for (MFUrl dlUrl : downloadLinks) {
 
 				try {
-					UserAgent userAgent = new UserAgent(); // create new userAgent (headless browser).
-					userAgent.visit(mfLink); // visit a url
-	
 					fileName = dlUrl.getFileName();
 					fileSize = dlUrl.getFileSize();
 					filePath = "pdfs/" + fileName;
@@ -270,7 +267,7 @@ public class ImranSeriesDownloader {
 						
 					}
 	
-				} catch (JauntException e1) { // if an HTTP/connection error occurs, handle JauntException.
+				} catch (Exception e1) { // if an HTTP/connection error occurs, handle JauntException.
 					System.err.println(e1);
 				}
 
@@ -303,7 +300,6 @@ public class ImranSeriesDownloader {
 			
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
